@@ -22,7 +22,7 @@ import CaseComponent from "./components/case/CaseComponent.vue";
   <RouterView /> -->
 
   <h1>Hello</h1>
-  <HelloWorld msg="You did it!" />
+  <!-- <HelloWorld msg="You did it!" /> -->
   <CaseComponent />
 </template>
 

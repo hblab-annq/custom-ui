@@ -8,7 +8,7 @@ export const useIsLoad = defineStore("isLoaded", () => {
     isLoad.value = value;
   };
 
-  const reverse = () => (isLoad.value = !isLoad);
+  const reverse = () => (isLoad.value = !isLoad.value);
 
   return { isLoad, setIsLoad, reverse };
 });

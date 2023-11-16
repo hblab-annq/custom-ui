@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import CESDKCanvas from "./CESDKCanvas/CESDKCanvas.vue";
+import CESDKCanvas from "./components/CESDKCanvas/CESDKCanvas.vue";
+import TopBarVue from "./components/TopBar/TopBar.vue";
 import { useIsLoad } from "./states/isLoaded";
 
 const isLoaded = useIsLoad();
 </script>
 
 <template>
-  <div class="greetings" @click="isLoaded.setIsLoad(!isLoaded.isLoad)">
+  <div class="greetings" @click="isLoaded.setIsLoad(true)">
     <h1 v-if="!isLoaded.isLoad">LoadingSpinner</h1>
-    <h1 v-if="isLoaded.isLoad">TopBar</h1>
+    <TopBarVue v-if="isLoaded.isLoad">TopBar</TopBarVue>
     <CESDKCanvas v-if="isLoaded" />
     <h1 v-if="isLoaded.isLoad">BottomControls</h1>
   </div>

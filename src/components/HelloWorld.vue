@@ -41,4 +41,3 @@ h3 {
   }
 }
 </style>
-@/components/case/states/mode ./case/states/viewMode
