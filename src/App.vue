@@ -20,10 +20,10 @@ import CaseComponent from "./components/case/CaseComponent.vue";
   </header>
 
   <RouterView /> -->
-
-  <h1>Hello</h1>
   <!-- <HelloWorld msg="You did it!" /> -->
   <CaseComponent />
+
+  <!-- <WelcomeItem /> -->
 </template>
 
 <style scoped>
